@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73452C26234D88FE00B6561D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C25234D88FE00B6561D /* AppDelegate.swift */; };
+		73452C28234D88FE00B6561D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C27234D88FE00B6561D /* SceneDelegate.swift */; };
+		73452C2A234D88FE00B6561D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C29234D88FE00B6561D /* ContentView.swift */; };
+		73452C2C234D890100B6561D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73452C2B234D890100B6561D /* Assets.xcassets */; };
+		73452C2F234D890100B6561D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73452C2E234D890100B6561D /* Preview Assets.xcassets */; };
+		73452C32234D890100B6561D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73452C30234D890100B6561D /* LaunchScreen.storyboard */; };
+		73452C3D234D890200B6561D /* SlackWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C3C234D890200B6561D /* SlackWatchTests.swift */; };
+		73452C48234D890200B6561D /* SlackWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C47234D890200B6561D /* SlackWatchUITests.swift */; };
+		73452C4D234D890200B6561D /* SlackWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 73452C4C234D890200B6561D /* SlackWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73452C53234D890200B6561D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73452C51234D890200B6561D /* Interface.storyboard */; };
+		73452C55234D890200B6561D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73452C54234D890200B6561D /* Assets.xcassets */; };
+		73452C5C234D890200B6561D /* SlackWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 73452C5B234D890200B6561D /* SlackWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73452C61234D890300B6561D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C60234D890300B6561D /* ContentView.swift */; };
+		73452C63234D890300B6561D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C62234D890300B6561D /* HostingController.swift */; };
+		73452C65234D890300B6561D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C64234D890300B6561D /* ExtensionDelegate.swift */; };
+		73452C67234D890300B6561D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C66234D890300B6561D /* NotificationController.swift */; };
+		73452C69234D890300B6561D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C68234D890300B6561D /* NotificationView.swift */; };
+		73452C6B234D890300B6561D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73452C6A234D890300B6561D /* ComplicationController.swift */; };
+		73452C6D234D890300B6561D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73452C6C234D890300B6561D /* Assets.xcassets */; };
+		73452C70234D890300B6561D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73452C6F234D890300B6561D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73452C39234D890200B6561D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73452C1A234D88FE00B6561D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73452C21234D88FE00B6561D;
+			remoteInfo = SlackWatch;
+		};
+		73452C44234D890200B6561D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73452C1A234D88FE00B6561D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73452C21234D88FE00B6561D;
+			remoteInfo = SlackWatch;
+		};
+		73452C4E234D890200B6561D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73452C1A234D88FE00B6561D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73452C4B234D890200B6561D;
+			remoteInfo = "SlackWatch WatchKit App";
+		};
+		73452C5D234D890300B6561D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73452C1A234D88FE00B6561D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73452C5A234D890200B6561D;
+			remoteInfo = "SlackWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73452C78234D890300B6561D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				73452C5C234D890200B6561D /* SlackWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C7C234D890300B6561D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				73452C4D234D890200B6561D /* SlackWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		73452C22234D88FE00B6561D /* SlackWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73452C25234D88FE00B6561D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73452C27234D88FE00B6561D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		73452C29234D88FE00B6561D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73452C2B234D890100B6561D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73452C2E234D890100B6561D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73452C31234D890100B6561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73452C33234D890100B6561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73452C38234D890200B6561D /* SlackWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73452C3C234D890200B6561D /* SlackWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWatchTests.swift; sourceTree = "<group>"; };
+		73452C3E234D890200B6561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73452C43234D890200B6561D /* SlackWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73452C47234D890200B6561D /* SlackWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackWatchUITests.swift; sourceTree = "<group>"; };
+		73452C49234D890200B6561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73452C4C234D890200B6561D /* SlackWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SlackWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73452C52234D890200B6561D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		73452C54234D890200B6561D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73452C56234D890200B6561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73452C5B234D890200B6561D /* SlackWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SlackWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73452C60234D890300B6561D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73452C62234D890300B6561D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		73452C64234D890300B6561D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		73452C66234D890300B6561D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		73452C68234D890300B6561D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		73452C6A234D890300B6561D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		73452C6C234D890300B6561D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73452C6F234D890300B6561D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73452C71234D890300B6561D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73452C72234D890300B6561D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73452C1F234D88FE00B6561D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C35234D890200B6561D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C40234D890200B6561D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C58234D890200B6561D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73452C19234D88FE00B6561D = {
+			isa = PBXGroup;
+			children = (
+				73452C24234D88FE00B6561D /* SlackWatch */,
+				73452C3B234D890200B6561D /* SlackWatchTests */,
+				73452C46234D890200B6561D /* SlackWatchUITests */,
+				73452C50234D890200B6561D /* SlackWatch WatchKit App */,
+				73452C5F234D890300B6561D /* SlackWatch WatchKit Extension */,
+				73452C23234D88FE00B6561D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73452C23234D88FE00B6561D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73452C22234D88FE00B6561D /* SlackWatch.app */,
+				73452C38234D890200B6561D /* SlackWatchTests.xctest */,
+				73452C43234D890200B6561D /* SlackWatchUITests.xctest */,
+				73452C4C234D890200B6561D /* SlackWatch WatchKit App.app */,
+				73452C5B234D890200B6561D /* SlackWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73452C24234D88FE00B6561D /* SlackWatch */ = {
+			isa = PBXGroup;
+			children = (
+				73452C25234D88FE00B6561D /* AppDelegate.swift */,
+				73452C27234D88FE00B6561D /* SceneDelegate.swift */,
+				73452C29234D88FE00B6561D /* ContentView.swift */,
+				73452C2B234D890100B6561D /* Assets.xcassets */,
+				73452C30234D890100B6561D /* LaunchScreen.storyboard */,
+				73452C33234D890100B6561D /* Info.plist */,
+				73452C2D234D890100B6561D /* Preview Content */,
+			);
+			path = SlackWatch;
+			sourceTree = "<group>";
+		};
+		73452C2D234D890100B6561D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				73452C2E234D890100B6561D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73452C3B234D890200B6561D /* SlackWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				73452C3C234D890200B6561D /* SlackWatchTests.swift */,
+				73452C3E234D890200B6561D /* Info.plist */,
+			);
+			path = SlackWatchTests;
+			sourceTree = "<group>";
+		};
+		73452C46234D890200B6561D /* SlackWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				73452C47234D890200B6561D /* SlackWatchUITests.swift */,
+				73452C49234D890200B6561D /* Info.plist */,
+			);
+			path = SlackWatchUITests;
+			sourceTree = "<group>";
+		};
+		73452C50234D890200B6561D /* SlackWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				73452C51234D890200B6561D /* Interface.storyboard */,
+				73452C54234D890200B6561D /* Assets.xcassets */,
+				73452C56234D890200B6561D /* Info.plist */,
+			);
+			path = "SlackWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		73452C5F234D890300B6561D /* SlackWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73452C60234D890300B6561D /* ContentView.swift */,
+				73452C62234D890300B6561D /* HostingController.swift */,
+				73452C64234D890300B6561D /* ExtensionDelegate.swift */,
+				73452C66234D890300B6561D /* NotificationController.swift */,
+				73452C68234D890300B6561D /* NotificationView.swift */,
+				73452C6A234D890300B6561D /* ComplicationController.swift */,
+				73452C6C234D890300B6561D /* Assets.xcassets */,
+				73452C71234D890300B6561D /* Info.plist */,
+				73452C72234D890300B6561D /* PushNotificationPayload.apns */,
+				73452C6E234D890300B6561D /* Preview Content */,
+			);
+			path = "SlackWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		73452C6E234D890300B6561D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				73452C6F234D890300B6561D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73452C21234D88FE00B6561D /* SlackWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73452C7D234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch" */;
+			buildPhases = (
+				73452C1E234D88FE00B6561D /* Sources */,
+				73452C1F234D88FE00B6561D /* Frameworks */,
+				73452C20234D88FE00B6561D /* Resources */,
+				73452C7C234D890300B6561D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73452C4F234D890200B6561D /* PBXTargetDependency */,
+			);
+			name = SlackWatch;
+			productName = SlackWatch;
+			productReference = 73452C22234D88FE00B6561D /* SlackWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73452C37234D890200B6561D /* SlackWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73452C80234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatchTests" */;
+			buildPhases = (
+				73452C34234D890200B6561D /* Sources */,
+				73452C35234D890200B6561D /* Frameworks */,
+				73452C36234D890200B6561D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73452C3A234D890200B6561D /* PBXTargetDependency */,
+			);
+			name = SlackWatchTests;
+			productName = SlackWatchTests;
+			productReference = 73452C38234D890200B6561D /* SlackWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73452C42234D890200B6561D /* SlackWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73452C83234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatchUITests" */;
+			buildPhases = (
+				73452C3F234D890200B6561D /* Sources */,
+				73452C40234D890200B6561D /* Frameworks */,
+				73452C41234D890200B6561D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73452C45234D890200B6561D /* PBXTargetDependency */,
+			);
+			name = SlackWatchUITests;
+			productName = SlackWatchUITests;
+			productReference = 73452C43234D890200B6561D /* SlackWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		73452C4B234D890200B6561D /* SlackWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73452C79234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch WatchKit App" */;
+			buildPhases = (
+				73452C4A234D890200B6561D /* Resources */,
+				73452C78234D890300B6561D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73452C5E234D890300B6561D /* PBXTargetDependency */,
+			);
+			name = "SlackWatch WatchKit App";
+			productName = "SlackWatch WatchKit App";
+			productReference = 73452C4C234D890200B6561D /* SlackWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		73452C5A234D890200B6561D /* SlackWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73452C75234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch WatchKit Extension" */;
+			buildPhases = (
+				73452C57234D890200B6561D /* Sources */,
+				73452C58234D890200B6561D /* Frameworks */,
+				73452C59234D890200B6561D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SlackWatch WatchKit Extension";
+			productName = "SlackWatch WatchKit Extension";
+			productReference = 73452C5B234D890200B6561D /* SlackWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73452C1A234D88FE00B6561D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Parth Oza";
+				TargetAttributes = {
+					73452C21234D88FE00B6561D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					73452C37234D890200B6561D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 73452C21234D88FE00B6561D;
+					};
+					73452C42234D890200B6561D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 73452C21234D88FE00B6561D;
+					};
+					73452C4B234D890200B6561D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					73452C5A234D890200B6561D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 73452C1D234D88FE00B6561D /* Build configuration list for PBXProject "SlackWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73452C19234D88FE00B6561D;
+			productRefGroup = 73452C23234D88FE00B6561D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73452C21234D88FE00B6561D /* SlackWatch */,
+				73452C37234D890200B6561D /* SlackWatchTests */,
+				73452C42234D890200B6561D /* SlackWatchUITests */,
+				73452C4B234D890200B6561D /* SlackWatch WatchKit App */,
+				73452C5A234D890200B6561D /* SlackWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73452C20234D88FE00B6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C32234D890100B6561D /* LaunchScreen.storyboard in Resources */,
+				73452C2F234D890100B6561D /* Preview Assets.xcassets in Resources */,
+				73452C2C234D890100B6561D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C36234D890200B6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C41234D890200B6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C4A234D890200B6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C55234D890200B6561D /* Assets.xcassets in Resources */,
+				73452C53234D890200B6561D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C59234D890200B6561D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C70234D890300B6561D /* Preview Assets.xcassets in Resources */,
+				73452C6D234D890300B6561D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73452C1E234D88FE00B6561D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C26234D88FE00B6561D /* AppDelegate.swift in Sources */,
+				73452C28234D88FE00B6561D /* SceneDelegate.swift in Sources */,
+				73452C2A234D88FE00B6561D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C34234D890200B6561D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C3D234D890200B6561D /* SlackWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C3F234D890200B6561D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C48234D890200B6561D /* SlackWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73452C57234D890200B6561D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73452C63234D890300B6561D /* HostingController.swift in Sources */,
+				73452C61234D890300B6561D /* ContentView.swift in Sources */,
+				73452C67234D890300B6561D /* NotificationController.swift in Sources */,
+				73452C65234D890300B6561D /* ExtensionDelegate.swift in Sources */,
+				73452C69234D890300B6561D /* NotificationView.swift in Sources */,
+				73452C6B234D890300B6561D /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73452C3A234D890200B6561D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73452C21234D88FE00B6561D /* SlackWatch */;
+			targetProxy = 73452C39234D890200B6561D /* PBXContainerItemProxy */;
+		};
+		73452C45234D890200B6561D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73452C21234D88FE00B6561D /* SlackWatch */;
+			targetProxy = 73452C44234D890200B6561D /* PBXContainerItemProxy */;
+		};
+		73452C4F234D890200B6561D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73452C4B234D890200B6561D /* SlackWatch WatchKit App */;
+			targetProxy = 73452C4E234D890200B6561D /* PBXContainerItemProxy */;
+		};
+		73452C5E234D890300B6561D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73452C5A234D890200B6561D /* SlackWatch WatchKit Extension */;
+			targetProxy = 73452C5D234D890300B6561D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73452C30234D890100B6561D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73452C31234D890100B6561D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		73452C51234D890200B6561D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73452C52234D890200B6561D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73452C73234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73452C74234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73452C76234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlackWatch WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SlackWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		73452C77234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlackWatch WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SlackWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		73452C7A234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SlackWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SlackWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		73452C7B234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SlackWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "SlackWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		73452C7E234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlackWatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlackWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73452C7F234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlackWatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlackWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73452C81234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlackWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackWatch.app/SlackWatch";
+			};
+			name = Debug;
+		};
+		73452C82234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlackWatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackWatch.app/SlackWatch";
+			};
+			name = Release;
+		};
+		73452C84234D890300B6561D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlackWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlackWatch;
+			};
+			name = Debug;
+		};
+		73452C85234D890300B6561D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SlackWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = plusparth.SlackWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlackWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73452C1D234D88FE00B6561D /* Build configuration list for PBXProject "SlackWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C73234D890300B6561D /* Debug */,
+				73452C74234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73452C75234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C76234D890300B6561D /* Debug */,
+				73452C77234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73452C79234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C7A234D890300B6561D /* Debug */,
+				73452C7B234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73452C7D234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C7E234D890300B6561D /* Debug */,
+				73452C7F234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73452C80234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C81234D890300B6561D /* Debug */,
+				73452C82234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73452C83234D890300B6561D /* Build configuration list for PBXNativeTarget "SlackWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73452C84234D890300B6561D /* Debug */,
+				73452C85234D890300B6561D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73452C1A234D88FE00B6561D /* Project object */;
+}
